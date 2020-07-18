@@ -47,18 +47,16 @@ function brickCalculator(floor){
   // Tiny friend name finder
 
   function tinyFriend(friends){
-    var tFriend = friends[0];
+    var myFriend = friends[0];
     for (var i = 0; i < friends.length; i++){
-      var sFriend = friends[i].length;
-      if(sFriend > tFriend){
-        tFriend = sFriend;
+      var smallFriend = friends[i];
+      if (smallFriend.length < myFriend.length){
+        myFriend = smallFriend;
       }
-      else if(sFriend < tFriend){
-          tFriend = sFriend;
-      }
-    }return tFriend;
+    }
+  return myFriend;
   }
   
-  var myTinyFriend = tinyFriend(["Monirul","islam","Kori"]);
+  var myTinyFriend = tinyFriend(["Jon","Mohan Kaysar","Milon","Masud Rana","Ashadus", "Moni"]);
   
   console.log(myTinyFriend);
