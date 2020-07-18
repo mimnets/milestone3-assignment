@@ -43,3 +43,7 @@ function brickCalculator(floor){
   var totalBrick = brickCalculator(21);
   
   console.log(totalBrick);
+
+  // Tiny friend name finder
+
+  
