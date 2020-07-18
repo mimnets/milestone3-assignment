@@ -46,4 +46,19 @@ function brickCalculator(floor){
 
   // Tiny friend name finder
 
+  function tinyFriend(friends){
+    var tFriend = friends[0];
+    for (var i = 0; i < friends.length; i++){
+      var sFriend = friends[i].length;
+      if(sFriend > tFriend){
+        tFriend = sFriend;
+      }
+      else if(sFriend < tFriend){
+          tFriend = sFriend;
+      }
+    }return tFriend;
+  }
   
+  var myTinyFriend = tinyFriend(["Monirul","islam","Kori"]);
+  
+  console.log(myTinyFriend);
